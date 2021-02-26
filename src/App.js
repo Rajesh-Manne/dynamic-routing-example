@@ -9,14 +9,17 @@ import Home from './components/Home';
 import AboutUs from './components/Aboutus';
 import ContactUs from './components/Contactus';
 import './App.css';
+import User from './Dynamic-routing/User';
+
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Switch>
-          <Route exact path="/" component={Home }/>
+       <Router>
+        {/* <Switch> */}
+          <Route exact path="/" component={Home }/> */}
               {/* <Home /> */}
             {/* </Route> */}
             {/* <Route path="/aboutus" component={AboutUs} /> */}
@@ -25,7 +28,11 @@ function App() {
           {/* <Route path="/contactus/:username" component={ ContactUs }/> */}
               {/* <ContactUs />
             </Route> */}
-        </Switch> 
+            
+        {/* </Switch> 
+      </Router> */}
+        <User />
+        
       </Router>
    </div>
   );
